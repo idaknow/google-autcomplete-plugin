@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ruleset name="Google Autocomplete Plugin">
+  <description>Basic PHPCS rules for this WordPress plugin.</description>
+
+  <arg name="basepath" value="."/>
+  <arg name="colors"/>
+  <arg value="sp"/>
+  <arg name="extensions" value="php"/>
+
+  <file>google-autocomplete-plugin</file>
+
+  <exclude-pattern>*/vendor/*</exclude-pattern>
+  <exclude-pattern>*/node_modules/*</exclude-pattern>
+
+  <rule ref="WordPress-Core"/>
+  <rule ref="WordPress.Files.FileName.InvalidClassFileName">
+    <severity>0</severity>
+  </rule>
+</ruleset>

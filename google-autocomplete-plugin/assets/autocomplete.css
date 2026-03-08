@@ -1,0 +1,4 @@
+/* Ensure Google autocomplete dropdown appears above checkout UI */
+.pac-container {
+  z-index: 999999 !important;
+}
